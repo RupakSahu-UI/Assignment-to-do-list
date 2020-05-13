@@ -6,7 +6,6 @@ import Lanes from '../components/Lanes.jsx';
 
 import HTML5Backend from 'react-dnd-html5-backend';
 import { DragDropContext } from 'react-dnd';
-import autoprefixer from 'autoprefixer';
 
 class App extends React.Component {
   render() {
@@ -36,9 +35,7 @@ App.propTypes = {
   onCreateLane: PropTypes.func.isRequired,
   onEditLane: PropTypes.func.isRequired,
   onReset: PropTypes.func.isRequired,
-  onDeleteLane: PropTypes.func.isRequired,  
-  //onMoveLane: PropTypes.func.isRequired,
-  
+  onDeleteLane: PropTypes.func.isRequired,   
 };
 
 const mapStateToProps = state => ({

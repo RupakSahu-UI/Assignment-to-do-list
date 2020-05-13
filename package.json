@@ -3,8 +3,10 @@
   "version": "0.1.1",
   "description": "Kanban board build with ReactJS and Redux",     
   "scripts": {
-    "deploy": "gh-pages -d build",
-    "fmt": "prettier --single-quote --print-width 100 --trailing-comma es5 --write \"src/**/*.js?(x)\"",   
+    "build": "npm run clean && NODE_ENV=production webpack",
+    "clean": "rm -rf ./dist && mkdir ./dist ",
+    "deploy": "gh-pages -d ./dist",    
+    "start": "webpack-dev-server --inline --hot",
     "test": "mocha --recursive --compilers js:babel-register"
   },
   "author": "Rupak Sahu", 
@@ -20,6 +22,9 @@
     "copy-webpack-plugin": "^4.0.1",
     "cross-env": "^5.0.1",
     "css-loader": "^0.28.4",
+    "eslint": "^2.3.0",
+    "eslint-config-airbnb": "^6.2.0",
+    "eslint-plugin-react": "^4.1.0",
     "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^0.11.2",
     "gh-pages": "^0.11.0",
@@ -27,7 +32,7 @@
     "html-webpack-plugin": "^2.29.0",
     "husky": "^0.14.3",
     "mocha": "^2.4.5",
-    "node-sass": "^4.14.1",
+    "node-sass": "^4.5.3",
     "postcss-loader": "^2.0.6",
     "prettier": "^1.5.3",
     "react-hot-loader": "^3.0.0-beta.7",
@@ -35,6 +40,7 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "webpack": "^2.7.0",
+    "webpack-dev-server": "^2.5.1"
   },
   "dependencies": {
     "localforage": "^1.4.0",
