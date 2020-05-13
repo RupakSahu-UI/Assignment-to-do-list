@@ -3,11 +3,8 @@
   "version": "0.1.1",
   "description": "Kanban board build with ReactJS and Redux", 
   "scripts": {
-    "build": "npm run build",   
     "deploy": "gh-pages -d build",
-    "fmt": "prettier --single-quote --print-width 100 --trailing-comma es5 --write \"src/**/*.js?(x)\"",
-    "lint": "eslint ./src --ext js,jsx",
-    "prepush": "npm run lint",
+    "fmt": "prettier --single-quote --print-width 100 --trailing-comma es5 --write \"src/**/*.js?(x)\"",   
     "start": "webpack-dev-server --inline --hot",
     "test": "mocha --recursive --compilers js:babel-register"
   },
