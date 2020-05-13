@@ -19,12 +19,12 @@
 }
 
 .app-title {
-  background: url('../images/logo.png') left center no-repeat; 
-  background-size: contain;  
+  background: $primary;  
+  color: $white;
   border-bottom: 1px solid rgba($gray-light, .2);
   border-top: 2px solid $primary;
   font-weight: 400;
   margin-bottom: .5em;
-  padding: 1em;
+  padding: .5em;
   text-align: left;
 }

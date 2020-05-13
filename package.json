@@ -1,7 +1,7 @@
 {
   "name": "react-kanban",
   "version": "0.1.1",
-  "description": "Kanban board build with ReactJS and Redux", 
+  "description": "Kanban board build with ReactJS and Redux",     
   "scripts": {
     "deploy": "gh-pages -d build",
     "fmt": "prettier --single-quote --print-width 100 --trailing-comma es5 --write \"src/**/*.js?(x)\"",   

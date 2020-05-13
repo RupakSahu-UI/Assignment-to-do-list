@@ -1,5 +1,5 @@
 .add-note {
-  background-color: $accent-sec;
+  background-color: $primary;
   height: 2em;
   margin-bottom: 1em;
   margin-left: 1em;
@@ -7,7 +7,7 @@
 
   &:hover,
   &:focus {
-    background-color: darken($accent-sec, 20%);
+    background-color: darken($primary, 10%);
   }
 }
 

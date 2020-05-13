@@ -12,7 +12,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="react-kanban">
-        <h1 className="app-title"></h1>  
+        <h1 className="app-title">Task Management</h1>  
         <Lanes
           lanes={this.props.lanes}
           onEditLane={this.props.onEditLane}
@@ -21,13 +21,10 @@ class App extends React.Component {
           onMoveLane={this.props.onMoveLane}
           */
         />
-        <div className="lanes">
+        <div className="lanes addNewList">
           <button className="add-lane" onClick={this.props.onCreateLane}>
             + Add a new list
-          </button>
-          <button className="reset-store" onClick={this.props.onReset}>
-            Reset
-          </button>
+          </button>        
         </div>
       </div>
     );
@@ -50,7 +47,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   onCreateLane() {
-    dispatch(lanesActions.createLane('Active'));
+    dispatch(lanesActions.createLane('New List'));
   },
 
   onEditLane(laneId, name) {

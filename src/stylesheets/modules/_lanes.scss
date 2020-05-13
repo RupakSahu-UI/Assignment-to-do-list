@@ -1,14 +1,13 @@
 .add-lane {
   background-color: $primary;
-  margin-bottom: .4em;
-  margin-left: 3em;
+  margin-bottom: .4em;  
 
   &:hover
   {
     background-color: $accent-ter;
   }
 }
-
+  
 .reset-store {
   background-color: rgba($primary, 0);
   box-shadow: none;
@@ -25,7 +24,7 @@
 }
 
 .lanes {
-  padding: 2em;
+  padding: 2em;  
 
   @media (min-width: $screen-phone) {
     display: flex;
@@ -42,6 +41,8 @@
   max-width: 15em;
   min-width: 12.5em;
   position: relative;
+  box-shadow: 2px 3px 5px #999;
+  background: #eae41c52;
 
   @media (max-width: $screen-phone) {
     margin-left: auto;
@@ -61,7 +62,7 @@
   }
 
   &__delete {
-    background-color: $white;    
+    background-color: transparent;    
     box-shadow: none;
     color: rgba(90, 80, 80, 0.3);
     cursor: pointer;
