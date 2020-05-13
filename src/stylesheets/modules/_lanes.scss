@@ -42,7 +42,7 @@
   min-width: 12.5em;
   position: relative;
   box-shadow: 2px 3px 5px #999;
-  background: #eae41c52;
+  background: $yellow-light;
 
   @media (max-width: $screen-phone) {
     margin-left: auto;
@@ -50,14 +50,18 @@
   }
 
   &__name {
+    background-color: $yellow-dark;
     border-bottom: 1px solid $gray-light;
-    font-weight: 400;
+    font-weight: 600;
     padding: .5em;
     padding-left: .5em;
     text-align: left;
 
-    .editing {
-      box-shadow: inset 0 -2px $accent-qua;
+    span input{
+      font-weight: 600;
+    }
+    .editing {      
+      box-shadow: inset 0 -2px $primary;
     }
   }
 
